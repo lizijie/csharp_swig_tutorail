@@ -10,6 +10,7 @@ set EXAM_DIR=%ROOT_DIR%\test
 
 
 if "%SWIG_BIN%"=="" goto :NOSWIG
+if not exist %SWIG_BIN% goto :NOSWIG
 
 if not exist %CS_WRAP_DIR% md %CS_WRAP_DIR%
 if not exist %C_WRAP_DIR% md %C_WRAP_DIR%
